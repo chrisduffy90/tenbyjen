@@ -94,11 +94,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .btn--lg { padding: 20px 56px; font-size: 12px; }
 
 .link--gold {
+  display: block;
   color: var(--gold);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.1em;
   transition: opacity 0.2s;
+  margin-top: 4px;
 }
 .link--gold:hover { opacity: 0.65; }
 
