@@ -5,6 +5,7 @@ import '../styles/global.css';
 
 import logoImg from '../assets/Logo-removebg-preview.png';
 import heroImg from '../assets/gallery/IMG_0958.jpeg';
+import jenImg from '../assets/jen.jpeg';
 
 const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
   '../assets/gallery/*.{jpeg,jpg,JPEG,JPG,png,PNG}',
@@ -107,10 +108,7 @@ const galleryImages = Object.values(imageFiles).map(m => m.default);
     <div class="container">
       <div class="about__inner">
         <div class="about__media fade-up">
-          <!-- Replace the div below with: <Image src={import('../assets/jen.jpeg')} alt="Jen" width={600} /> -->
-          <div class="about__photo-placeholder">
-            <span>Add a photo<br>of Jen here</span>
-          </div>
+          <Image src={jenImg} alt="Jen" width={600} />
           <div class="about__badge">
             <span class="badge-top">Elite</span>
             <span class="badge-script">Artist</span>
